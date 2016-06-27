@@ -14,3 +14,8 @@
 
 TweenMax.from(".logo", 0.5, {opacity:0, scale:0, ease:Bounce.easeOut});
 TweenMax.staggerFrom(".box", 0.5, {opacity:0, y:200, rotation: 360, scale:2, delay:0.5}, 0.2);
+TweenMax.to(".logo, .box", 0.5, {opacity:0, delay:2, onComplete:complete});
+
+	function complete(){
+		alert("all done ;)")
+	}
